@@ -1,0 +1,20 @@
+using System;
+using System.Linq;
+
+namespace Números_1_al_100;
+
+public static class Program
+{
+    public static void Main()
+    {
+        int contadorDoWhile = 1;
+        do
+        {
+            Console.WriteLine("Contador = " + contadorDoWhile);
+
+            contadorDoWhile++;
+        } while (contadorDoWhile <= 100);
+
+    }
+}
+
