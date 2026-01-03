@@ -1,0 +1,33 @@
+Console.WriteLine("Ingresa un numero: ");
+    float num1 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Ingresa otro numero: ");
+    float num2 = float.Parse(Console.ReadLine());
+    Console.WriteLine("Elige una operacion\n1.- Suma\n2.- Resta\n3.- Multiplicación \n4.- Division");
+    int operacion = int.Parse(Console.ReadLine());
+    switch(operacion)
+        {
+        case 1:
+            float suma = num1 + num2;
+            Console.WriteLine($"Resultado suma: {suma}");
+            break;
+        case 2:
+            float resta = num1 - num2;
+            Console.WriteLine($"Resultado resta: {resta}");
+            break;
+        case 3:
+            float multiplicacion = num1 * num2;
+            Console.WriteLine($"Resultado multiplicacion: {multiplicacion}");
+            break;
+        case 4:
+            if(num2==0)
+                Console.WriteLine("Division entre 0, error");
+            else
+                {
+                float division = num1 / num2;
+                Console.WriteLine($"Resultado division: {division}");
+                }
+            break;
+        default:
+            Console.WriteLine("Incorrecto");
+            break;
+        }
