@@ -1,0 +1,47 @@
+sing System;
+using System.Linq;
+
+namespace Menu_de_Comida;
+
+public static class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("Menu");
+        Console.WriteLine("Tacos $35");
+        Console.WriteLine("Pizza $40");
+        Console.WriteLine("Hamburguesa $55");
+        Console.WriteLine("Sandwich $25");
+        Console.WriteLine("Sopes $30");
+        int opcion = int.Parse(Console.ReadLine());
+        Console.WriteLine($"\nOpcion elegida = {opcion}");
+
+        switch (opcion)
+        {
+            case 1:
+                Console.WriteLine("Elegiste Tacos $35");
+                break;
+            case 2:
+                Console.WriteLine("Elegiste Pizza $40");
+                break;
+            case 3:
+                Console.WriteLine("Elegiste Hamburguesa $55");
+                break;
+            case 4:
+                Console.WriteLine("Elegiste Sandwich $25");
+                break;
+            case 5:
+                Console.WriteLine("Elegiste Sopes $30");
+                break;
+            default:
+                Console.WriteLine("Elelgiste una opcion imvalida");
+                break;
+
+
+
+        }
+
+
+    }
+}
+
