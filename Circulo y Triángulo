@@ -1,0 +1,44 @@
+using System;
+using System.Linq;
+
+namespace Circulo_y_triángulo;
+
+public static class Program
+{
+    public static void Main()
+    {
+        double pi = 3.1416;
+        double radio = 0.000;
+        Console.WriteLine("Definir radio");
+        radio =
+        double.Parse(Console.ReadLine());
+        double r = (pi * (radio * radio));
+        Console.WriteLine("Area circulo = " + r);
+
+
+
+
+        float altura = 0.00f;
+        float fbase = 0.00f;
+        float resultado = 0.00f;
+
+        Console.WeiteLine("Definir altura:");
+        altura =
+        float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Definir base:");
+        fbase =
+        float.Parse(Console.ReadLine());
+
+        resultado = (fbase * altura) / 2;
+
+        Console.WriteLine("Area:" + resultado);
+
+
+
+
+
+
+    }
+}
+
