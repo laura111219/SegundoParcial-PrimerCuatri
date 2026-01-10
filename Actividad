@@ -1,0 +1,15 @@
+using System;
+
+public class Program
+{
+    static public void Main ()
+    {
+       const String Valor = "*";
+        for (int i = 0; i<3; i++)
+        {
+
+        Console.WriteLine (Valor + "");
+    }
+
+    }
+}
