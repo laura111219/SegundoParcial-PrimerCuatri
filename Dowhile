@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main(string[]args)
+    {
+        const string Valor = "*";
+        int control = 1;
+        do
+        {
+            Console.WriteLine(Valor + "**");
+            control++; // Incrementa el contador 
+        }
+
+         while (control <=3);
+        Console.WriteLine("Ciclo terminado");
+}}
