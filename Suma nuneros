@@ -1,0 +1,24 @@
+//Suma los Primeros Números
+//Descripción:
+//Pide un entero N y calcula la suma de 1 a N usando do–while.
+using System;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Ingresa hasta donde termina: ");
+        int num = int.Parse(Console.ReadLine());
+        int i = 0;
+        int suma = 0;
+        int sumacontrol = 0;
+        do
+        {   
+            sumacontrol = suma;
+            suma = suma + i; 
+            Console.WriteLine($"{sumacontrol} + {i} = {suma}");
+
+            i++;
+        }
+        while(i<=num);
+    }
+}
