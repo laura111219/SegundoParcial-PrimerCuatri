@@ -1,0 +1,26 @@
+//Contador de Números Positivos y Negativos
+//Descripción:
+//Lee números hasta que el usuario ingrese 0.
+//Cuenta cuántos valores fueron positivos y cuántos negativos usando while.
+using System;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int positivos = 0;
+        int negativos = 0;
+        Console.Write("Ingresa un numero entero: ");
+        float num = float.Parse(Console.ReadLine());
+        while(num!=0)
+        {
+            Console.Write("Ingresa otro numero entero: ");
+            float num2 = float.Parse(Console.ReadLine());
+            num=num2;
+            if(num<0)
+                positivos++;
+            else    
+                negativos++;
+        }
+        Console.Write($"Cantidad de numeros positivos: {positivos}\nCantidad de numeros negativos: {negativos}");
+    }
+}
