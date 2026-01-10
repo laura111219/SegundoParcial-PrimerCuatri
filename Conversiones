@@ -1,0 +1,58 @@
+//Menú de Conversiones
+//Descripción:
+//Mediante un menú (switch-case):
+//Convertir Celsius a Fahrenheit
+//Convertir km/h a m/s
+//Convertir pesos a dólares
+//El usuario selecciona una opción, ingresa el dato y se muestra el resultado.
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Ingresa conversion que deseas realizar:");
+        Console.WriteLine("1.- Convertir Celsius a Fahrenheit");
+        Console.WriteLine("2.- km/h a m/s");
+        Console.WriteLine("3.- Pesos a dolares");
+
+        int eleccion = int.Parse(Console.ReadLine());
+
+        switch(eleccion)
+        {
+            case 1:
+            {
+                Console.WriteLine("Ingresa Temperatura en Celsius");
+                float temp = float.Parse(Console.ReadLine());
+                float farh = temp * 9f/5f + 32f;
+                Console.WriteLine($"{temp} grados Celsius = {farh} Fahrenheit");
+                break;
+            }
+
+            case 2:
+            {
+                Console.WriteLine("Ingresa km/h");
+                float kmh = float.Parse(Console.ReadLine());
+                float ms = kmh / 3.6f;
+                Console.WriteLine($"{kmh} km/h = {ms} m/s");
+                break;
+            }
+
+            case 3:
+            {
+                Console.WriteLine("Ingresa Pesos");
+                double peso = double.Parse(Console.ReadLine());
+                double dolar = peso * 0.05;
+                Console.WriteLine($"{peso} pesos = {dolar} dolares");
+                break;
+            }
+
+            default:
+            {
+                Console.WriteLine("Opcion incorrecta");
+                break;
+            }
+        }
+    }
+}
